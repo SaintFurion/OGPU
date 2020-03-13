@@ -1,0 +1,47 @@
+<head>
+	<style>
+		#im1 {position: relative}
+		#im2 {position:absolute;left:0;top:50}
+	</style>
+</head>
+<body>
+	<img src="fon.jpg" id="im1" width="50%">
+	<img src="pt.jpg" id="im2" width="20px">
+	<script type="text/JavaScript">
+	function f(){
+		if (x<x1-x2) {
+			x++;
+			r2.style.left=x; 
+			setTimeout("f()",5)}
+		else if ((x==x1-x2) && (y==199)){
+			f1();
+		}
+		else {
+			y++;
+			r2.style.top=y;
+			if (y<200) setTimeout("f()",5);
+		}
+		
+	}
+
+	function f1(){
+		if (x>30) {
+			x--;
+			r2.style.left=x; 
+			setTimeout("f1()",5)
+		} else {
+			y++;
+			r2.style.top=y;
+			if (y<320) setTimeout("f1()",5);
+		}
+	}
+
+	x=0;
+	y=50;
+	r1=document.getElementById('im1');
+	r2=document.getElementById('im2');
+	x1=r1.width; 
+	x2=r2.width;
+	f();
+	</script>
+</body>

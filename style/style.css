@@ -1,0 +1,563 @@
+@font-face{
+    font-family: 'Geometria-Heavy';
+    src: url('../fonts/Geometria-Heavy.ttf');
+}
+
+@font-face{
+    font-family: 'Geometria-Bold';
+    src: url('../fonts/Geometria-Bold.ttf');
+}
+
+@font-face{
+    font-family: 'Geometria-ExtraBold';
+    src: url('../fonts/Geometria-ExtraBold.ttf');
+}
+
+@font-face{
+    font-family: 'Geometria-Medium';
+    src: url('../fonts/Geometria-Medium.ttf');
+}
+
+@font-face{
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria.ttf');
+}
+
+@font-face{
+    font-family: 'MyriadPro-Regular';
+    src: url('../fonts/MyriadPro-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'ProximaNova-Bold';
+    src: url('../fonts/ProximaNova-Bold.otf');
+}
+
+@font-face{
+    font-family: 'ProximaNova-Regular';
+    src: url('../fonts/ProximaNova-Regular.ttf');
+}
+
+#header{
+    font-size: 16px;
+    line-height: 17px;
+    color: white;
+    font-family: 'Geometria';
+    padding-bottom: 30px;
+}
+
+.information{
+    padding-top: 48px;
+}
+
+.name span{
+    font-family: 'Geometria-Heavy';
+    font-size: 18px;
+    color: #0a09a3;
+    position: relative;
+    padding-left: 135px;
+    padding-top: 50px;
+}
+
+.name span{
+    content: "";
+    background: url(../img/ogpu.png) no-repeat 50% 50%;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: -20px;
+    top: -50px;
+}
+
+.map span{
+    font-family: 'Geometria-Bold';
+    font-size: 16px;
+    color: #012646;
+    position: relative;
+    padding-left: 20px; 
+}
+.map span::before{
+    content: "";
+    background: url(../img/map.png) no-repeat 50% 50%;
+    position: absolute;
+    width: 22px;
+    height: 25px;
+    left: -25px;
+    top: 15px;
+}
+
+.number {
+    text-align: right;
+}
+
+.number span{
+    font-family: 'Geometria-ExtraBold';
+    position: relative;
+    color: #012646;
+    font-size: 16px;
+    width: 225px;
+}
+
+.number span::before{
+    content: "";
+    background: url(../img/call.png) no-repeat 50% 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: -190px;
+    top: 5px;
+}
+
+A{
+    color: #012646;  
+}
+
+A:hover{
+    text-decoration: none;
+    color: #3887cf;
+}
+
+.selections{
+    margin-left:0px;
+    margin-right:0px;
+    padding-left: 0px;
+}
+
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.collapse.navbar-collapse{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.navbar {
+    margin: 70px 15px 0px 15px;
+}
+
+.navbar ul{
+    padding-left: 0px;
+}
+
+.navbar li{
+    background-color: #0908b0; 
+    display: table-cell;
+    width: 1140px; 
+}
+
+.navbar li a{
+    display: block; 
+    position: relative;
+    font-size: 16px;
+    text-align:center;
+    color:white;
+    line-height: 60px;
+}
+
+.navbar ul li a:hover{
+    background-color: #3887cf;
+
+}
+
+.navbar.navbar-default{
+    background-color:none;
+    border: none;
+
+}
+
+.menu-item {
+    position: relative; 
+}
+
+.menu-item .students {
+    height: 40px;
+    width: 200px;
+    background: #3887cf;
+    position: absolute;
+    z-index: 1;
+}
+
+ul.students {
+    position: absolute;
+    width: 240px;
+    /* Делаю субменю скрытыми. */
+    display: none;
+    /* Цвет — белый. */
+}
+
+.menu-item > li:hover > ul {
+    top: 58px;
+    display: block;
+}
+
+.students li {
+    display: block;
+    width: 271px;
+}
+
+#banner{
+    position: relative;
+    text-align: center;
+}
+
+#banner img{
+    max-width:100%;
+}
+
+#flesh{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.sidebar{
+    margin-bottom: 30px;
+    margin-top: 30px; 
+    margin-right: -15px;
+}
+
+.directions{
+    font-size: 22px;
+    font-family: "Geometria-Bold";
+    color: white;
+    text-align: center;
+    padding: 30px 0px;
+    background: #0908b0;
+}
+
+#sidebar-menu ul{
+    position: relative;
+    background: #f4f4f4;
+    padding-left: 25px;
+    padding-top: 38px;
+}
+
+#sidebar-menu ul li{
+    list-style-type: none;
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+#sidebar-menu ul li a{
+    display: block;
+    color: #303030;
+    position:relative;
+    font-family: "Geometria-Bold";
+    font-size: 13px;
+    margin-left: -40px;
+    text-align: center;
+}
+
+#sidebar-menu ul a:hover{
+    text-decoration: underline;
+    color: #0908b0;
+  }
+
+#content A span{
+    color: #787878;
+    font-family: "Geometria";
+    font-size: 15px;
+}
+
+#content A span:hover{
+    color: #0908b0;  
+}
+
+#content{
+    min-height: 500px;
+    padding-top: 25px;
+    padding-left: 40px;
+}
+
+p{
+    margin: 20px 0 20px 0; 
+}
+
+h1{
+    font-family:"Geometria-Bold";
+    color: #0908b0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+h2{
+    font-size: 25px;
+    font-family:"ProximaNova-Bold";
+    color: #0908b0;
+    margin-bottom: 10px;
+}
+
+.cont{
+    display: inline;
+    color: #474747;
+    font-family: "ProximaNova-Regular";
+    padding-left: 20px;
+    padding-right: 20px; 
+}
+
+#content ul li{
+    color: #0908b0;
+}
+
+#content ul li span{
+    padding-left: 0px;
+    color: #474747;
+}
+
+.topnav ul{
+    padding-left: 250px;
+}
+
+.topnav ul li{
+    float: none;
+    position: relative; 
+    display: table-cell;
+}
+.topnav ul li a{
+    text-decoration: none;
+    position: relative;
+    text-align:center;
+    font-size: 16px;
+    font-family: "Geometria-Bold";
+    color: #0908b0;
+    padding: 0px 35px;
+}
+
+.topnav ul a:hover{
+    text-decoration: underline;
+    color: #3887cf;
+  }
+
+@media (max-width: 770px) {
+    #header
+    {
+        text-align: center;
+    }
+
+    .name{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .map{
+        display: none;
+    }
+
+    .number span{
+        padding-left:0px;
+        margin-left: 0px;
+    }
+
+    .number{
+        display: none;
+    }
+
+    #sidebar-menu a{
+        text-align: center;
+    }
+
+    #bs-example-navbar-collapse-1{
+        margin-right: 30px;
+    }
+
+    #bs-example-navbar-collapse-2{
+        margin-right: 0px;
+        margin-left: 0px;
+        background-color:none;
+        border: none;
+
+    }
+
+    .navbar.navbar-default{
+        background-color: #04569f;
+    }
+    
+    .navbar-default{
+        background-color:#f4f4f4;
+    }
+
+    .navbar ul{
+        padding-left: 0px;
+    }
+    
+    .navbar li{
+        display: flex; 
+        justify-content: center;
+        background-color: #04569f; 
+        margin-left: 15px;
+        width: 100%; 
+    }
+    
+    .navbar ul li a{
+        position: relative;
+        text-align:center;
+        color:white;
+    }
+    
+
+    #banner img{
+        padding-left:15px;
+        padding-right:15px;
+    }
+
+    #content{
+        padding-left: 15px;
+    }
+
+    .sidebar{
+        margin-right: 0px;
+    }
+
+    #sidebar-menu img{
+        display: none;
+    }
+
+    .topnav ul{
+        display: none;
+    }
+    
+}
+
+
+@media (min-width: 770px) and (max-width: 990px) {
+    #header{
+        padding-left:15px;
+        padding-right:15px; 
+        text-align: left;
+    }
+
+    #banner img{
+        width: 720px;
+    }
+
+    .map{
+        margin-left: 20px;
+        padding-left:0px;
+    }
+
+    .map span{
+        padding-left:0px;
+    }
+
+    .map span::before{
+        display: none;
+    }
+    .number span{
+        font-family: 'Geometria-ExtraBold';
+        position: relative;
+        color: #012646;
+        font-size: 20px;
+        padding-left:10px;
+        margin-left: 20px;
+    }
+
+    .number span::before {
+        display: none;
+    }
+
+    .navbar.navbar-default{
+        background-color:#04569f;
+    }
+
+    #sidebar-menu img{
+        display: none;
+    }
+
+    #sidebar-menu a{
+        text-align: center;
+    }
+
+    #bs-example-navbar-collapse-1{
+        margin-right: 30px;
+    }
+
+    .navbar.navbar-default{
+        background-color: #04569f;
+    }
+    
+    .navbar ul{
+        padding-left: 0px;
+    }
+    
+    .navbar li{
+        display: flex; 
+        justify-content: center;
+        background-color: #04569f; 
+        margin-left: 15px;
+        width: 100%; 
+    }
+    
+    .navbar ul li a{
+        position: relative;
+        text-align:center;
+        color:white;
+    }
+
+    #content{
+        padding-left: 15px;
+    }
+
+    .sidebar{
+        margin-right:0px;
+    }
+
+    .topnav ul{
+        padding-left: 10px;
+        margin-bottom: 60px;
+    }
+    
+    .topnav ul li a{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
+
+@media (min-width: 990px) and (max-width: 1197px){
+
+    #header{
+        padding-left:15px;
+        padding-right:15px; 
+    }
+
+    #banner img{
+        width: 940px;
+    }
+
+    .map{
+        margin-left: 20px;
+        padding-left:0px;
+    }
+
+    .map span{
+        padding-left:0px;
+    }
+
+    .map span::before{
+        left: -40px;
+    }
+    .number span{
+        font-family: 'Geometria-ExtraBold';
+        position: relative;
+        color: #012646;
+        font-size: 20px;
+        padding-left:10px;
+        margin-left: 20px;
+    }
+ 
+    .number span::before {
+        left: -220px;
+    }
+
+    .topnav ul{
+        padding-left: 20px;
+        margin-bottom: 60px;
+    }
+    
+    .topnav ul li a{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}

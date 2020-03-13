@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+	img {
+	border-style: inset;
+	border-width: 50px;
+	border-color: gray;}
+</style>
+<script>
+	i=0;
+	function f(){
+		// объект буква Z
+		r1=document.getElementById('e1');
+		// объект кнопка
+		r2=document.getElementById('e2');
+		if (i==0){ 
+			r1.style.borderColor= 'blue';
+			r2.value='изменить на серый';
+			i=1;
+		} else{ 
+			r1.style.borderColor='gray';
+			r2.value='изменить на синий';
+			i=0;
+		}
+	}
+
+</script>
+</head>
+<body>
+	<img id='e1' src="na.jpg">
+	<br><br>
+	<form>
+		<input type="button" id='e2' value="изменить на синий" onClick="f();" >
+	</form>
+</body>
+</html>

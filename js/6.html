@@ -1,0 +1,34 @@
+<head>
+<style>
+body {background-color:#dfd8c5;}
+img {width:274; height:233} </style>
+<script>
+JavaScript
+42
+function doEvent(num)
+{
+// переменная cv объект img с именем pic
+var cv=document.getElementById('info');
+if(num==pic1) cv.value="Ford $ 40000"
+else if (num==pic2) cv.value="Audi $ 30000"
+else if (num==pic3) cv.value="BMV $ 100000"
+else cv.value="";
+
+}
+</script>
+</head>
+<body>
+<h1>Продаются автомобили</H1>
+<p>Переведи мышиный курсор на машину!</p>
+<img name ="pic" id='pic1' src="mas.jpg"
+onMouseOver="doEvent(pic1);" onMouseOut="doEvent(0);">
+
+<img name ="pic" id='pic2' src="aud.jpg"
+onMouseOver="doEvent(pic2);" onMouseOut="doEvent(0);">
+
+<img name ="pic" id='pic3' src="bmv.jpg"
+onMouseOver="doEvent(pic3);" onMouseOut="doEvent(0);">
+
+<br/><br/>
+<input name="info" id='info' type="text" value="" size="50">
+</body>

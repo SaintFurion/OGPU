@@ -1,0 +1,26 @@
+<head>
+<style>
+body {background-color:#dfd8c5;}
+img {width:274; height:233} </style>
+<script>
+JavaScript
+42
+function doEvent(type)
+{
+// переменная cv объект img с именем pic
+var cv=document.getElementById('pic');
+// если параметр функции равен true, то
+// меняем свойство src объекта cv на flower.jpg
+if(type) cv.src="flower.jpg";
+// в противном случае показываем
+// картинку с именем bigdaisy.jpg
+else cv.src="bigdaisy.jpg";
+}
+</script>
+</head>
+<body>
+<h1>События MouseOver и MouseOut</H1>
+<p>Переведи мышиный курсор на цветок!</p>
+<img name ="pic" id='pic' src="bigdaisy.jpg"
+onMouseOver="doEvent(true);" onMouseOut="doEvent(false);">
+</body>

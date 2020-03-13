@@ -1,0 +1,83 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Лаба 4</title>
+	</head>
+	
+	<body>
+		<h1>Страничка по заказу</h1>
+		<form>
+			<label for="name">Заголовок</label>
+			<input type="text" id="name" name="name"><br>
+			<h2>Картинка</h2>
+				<input type='radio' id="sobaka" checked>Собака<br/>
+				<input type='radio' id="flower">Одинокий цветок<br/>
+				<input type='radio' id="buket">Букет<br/>	
+			<label for="pod">Подпись</label>
+			<input type="text" id="pod" name="pod"><br>
+			<table>
+				<tr>
+					<td><h2>Цвет фона</h2></td>
+					<td><h2>Цвет текста</h2></td>
+				</tr>
+				<tr>
+					<td>
+						<select>
+							<option id="k1">синий</option>
+							<option id="k2">красный</option>
+							<option id="k3">зеленый</option>
+						</select>
+					</td>
+					<td>
+						<input type="radio" id="white" name="white">белый<br>
+						<input type="radio" id="black" name="black">черный<br>
+						<input type="radio" id="blue" name="blue">синий<br>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="button" value="Сброс" onclick="GO()" style="float: left"></td>
+					<td><input type="button" value="Показать" onclick="validate()" style="float: left; padding-left: 20px"></td>
+				</tr>
+			</table>
+		</form>
+		<script>
+			function validate()
+			{
+				// переменная р текстовое поле с именем tx
+				var p=document.getElementById('name');
+				// переменная textt содержит текст из текстового поля
+				var textt=p.value
+				// переменная р1 радиокнопка с именем k1
+				var p1=document.getElementById('sobaka');
+				// переменная р2 радиокнопка с именем k2
+				var p2=document.getElementById('flower');
+				// переменная р3 радиокнопка с именем k3
+				var p3=document.getElementById('buket');
+				// значение переменной vt – вид выравнивания
+				// если выбрана 1-я радиокнопка
+				if (p1.checked) img='sobaka.jpg'
+				// если выбрана 2-я радиокнопка
+				if (p2.checked) img='flower.jpg'
+				// если выбрана 3-я радиокнопка
+				if (p3.checked) img='buket.jpg'
+				var win=window.open("","","width=100px,height=500px");
+				win.document.open();
+				// переменная st содержит
+				// сформированную таблицу стилей нового документа
+				var st="<head><style> body {height=500px; background-image: url("+img+"); background-repeat: no-repeat}</style></head>"
+				win.document.write(st);
+				// переменная st содержит
+				// сформированное тело нового документа
+				var st="<body><h2>"+textt+"</h2></body>"
+				win.document.write(st);
+				var q=document.getElementById('pod');
+				// переменная textt содержит текст из текстового поля
+				var textt=q.value;
+				var st="<body><h2>"+textt+"</h2></body>"
+				win.document.write(st);
+				
+				win.document.close();
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+<html>
+<head>
+<style>
+	img {
+	border-style: inset;
+	border-width: 50px;
+	border-color: gray;}
+</style>
+<script>
+	i=0;
+	function f(){
+		// объект буква Z
+		r1=document.getElementById('e1');
+		// объект кнопка
+		r2=document.getElementById('e2');
+		r3=document.getElementById('e3');
+		if (i==0){ 
+			r1.style.display = 'none';
+			r3.style.display = 'block';
+			r2.value='показать текст';
+			i=1;
+		} else{ 
+			r3.style.display = 'none';
+			r1.style.display = 'block';
+			r2.value='показать свечу';
+			i=0;
+		}
+	}
+
+</script>
+</head>
+<body>
+    <form>
+		<input type="button" id='e2' value="показать свечу" onClick="f();" >
+	</form>
+	<h2> Иннокентий Аненский </h2>
+	<h1> Свечку внесли </h1>
+		<div  id='e1'>
+		<p><pre>
+			Не мерещится ль вам иногда, 
+			Когда сумерки ходят по дому, 
+			Тут же возле иная среда, 
+			Где живём мы совсем по-другому? 
+			  
+			С тенью тень там так мягко слилась, 
+			Там бывает такая минута, 
+			Что лучами незримыми глаз 
+			Мы уходим друг в друга как будто. 
+			  
+			И движеньем спугнуть этот миг 
+			Мы боимся, иль словом нарушить, 
+			Точно ухом кто возле приник, 
+			Заставляя далёкое слушать. 
+			  
+			Но едва запылает свеча, 
+			Чуткий мир уступает без боя, 
+			Лишь из глаз по наклонам луча 
+			Тени в пламя бегут голубое.</pre></p>
+		</div>
+		<img id='e3' src="sv.jpg" style="display:none;">
+	<br><br>
+	
+</body>
+</html>
